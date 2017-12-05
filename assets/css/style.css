@@ -1,0 +1,52 @@
+html,body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 36px;
+}
+.full-height {
+    height: 100%;
+}
+.chat-scroll {
+    overflow-y: scroll;
+}
+.header {
+    background: #29B2DF;
+}
+.content {
+    background: #80C4DF;
+}
+.footer {
+    background: #EEF4F8;
+    height: 73px;
+}
+.btn-primary {
+    background: #2D94C2;
+    border-color: #2D94C2;
+}
+.btn-primary:hover {
+    background: #00558E;
+    border-color: #00558E;
+}
+
+.link-btn {
+    cursor: pointer;
+}
+
+.msg {
+    padding: 5px;
+    border-radius: 4px;
+    background: #EEF4F8;
+}
+.msg-data {
+    font-weight: bold;
+}
+.msg-text {
+    font-style: italic;
+}
+.msg-left {
+    margin-right: 50px;
+}
+.msg-right {
+    margin-left: 50px;
+}

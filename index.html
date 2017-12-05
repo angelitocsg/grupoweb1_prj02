@@ -6,9 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Webchat</title>
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+            /*div { border:1px dotted black; }*/
+        </style>
     </head>
     <body>
 
+        <div id="context">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 text-center">
+                        <p><img src="assets/images/chat.png" style="width:80%"></p>
+                        <p class="text-center"><h1>Webchat 2.0</h1></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <p><input type="text" name="nickname" placeholder="Informe seu apelido" class="form-control"></p>
+                        <p><button type="button" name="btnEnter" class="form-control btn btn-primary">ENTRAR</button></p>
+                        <p><button type="button" name="btnEnter" class="form-control btn btn-secondary">DESCONECTAR USUÁRIOS</button></p>
+                        <p><button type="button" name="btnEnter" class="form-control btn btn-secondary">LIMPAR MENSAGENS</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

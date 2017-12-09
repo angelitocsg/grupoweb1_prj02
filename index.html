@@ -10,10 +10,15 @@
         <style>
             /*div { border:1px dotted black; }*/
         </style>
+        <script type="text/javascript">
+            chat_user = 'null';
+            count = 0;
+            prefix = "http://www.angelito.com.br/webchat2/";
+        </script>
     </head>
     <body>
 
-        <div id="context">
+        <div id="myContainer" class="full-height">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 offset-md-3 text-center">
@@ -23,10 +28,24 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
-                        <p><input type="text" name="nickname" placeholder="Informe seu apelido" class="form-control"></p>
-                        <p><button type="button" name="btnEnter" class="form-control btn btn-primary">ENTRAR</button></p>
-                        <p><button type="button" name="btnEnter" class="form-control btn btn-secondary">DESCONECTAR USUÁRIOS</button></p>
-                        <p><button type="button" name="btnEnter" class="form-control btn btn-secondary">LIMPAR MENSAGENS</button></p>
+                        <p><input type="text" id="nickname" name="nickname" placeholder="Informe seu apelido" class="form-control" required></p>
+                        <p><button type="button" id="btnEnter" name="btnEnter" class="form-control btn btn-primary">ENTRAR</button></p>
+                        <p><button type="button" id="btnDisconnect" name="btnDisconnect" class="form-control btn btn-secondary">DESCONECTAR USUÁRIOS</button></p>
+                        <p><button type="button" id="btnResetMessages" name="btnCleanMsg" class="form-control btn btn-secondary">LIMPAR MENSAGENS</button></p>
+                    </div>
+                </div>
+            </div><!-- /.container -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div id="modal-message"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -35,5 +54,7 @@
         <script src="assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+        <script src="assets/js/script.js" charset="utf-8"></script>
+        <script src="assets/js/buttons.js" charset="utf-8"></script>
     </body>
 </html>

@@ -3,14 +3,34 @@ html,body {
     margin: 0px;
     padding: 0px;
 }
+body {
+    overflow: hidden;
+}
 button {
     cursor: pointer;
 }
 .full-height {
     height: 100%;
 }
+.chat-content {
+    padding-top: 55px;
+    padding-bottom: 73px;
+}
 .chat-scroll {
     overflow-y: scroll;
+}
+
+/* Chrome, Safari */
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+::-webkit-scrollbar-track-piece  {
+    background-color: #80C4DF;
+}
+::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #29B2DF;
 }
 .header {
     background: #29B2DF;

@@ -50,5 +50,6 @@ function get_messages(field) {
 }
 
 function scrolldown() {
-  window.scrollTo(0,document.body.scrollHeight+30);
+    var comp = document.getElementById("scroll-down");
+    comp.scrollTo(0,comp.scrollHeight);
 }
